@@ -1,0 +1,29 @@
+package com.student.springstudentrest_api.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.student.springstudentrest_api.entity.Student;
+import com.student.springstudentrest_api.repository.StudentRepository;
+
+
+
+@Service
+public class StudentService {
+	
+	@Autowired
+	private StudentRepository repository;
+	
+	public Student saveStudent(Student student) {
+		
+		return repository.save(student);
+	}
+	
+	public List<Student> saveStudents(List<Student> students) {
+		
+		return repository.saveAll(students);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.student.springstudentrest_api.controller;
+
+public class StudentController {
+
+}

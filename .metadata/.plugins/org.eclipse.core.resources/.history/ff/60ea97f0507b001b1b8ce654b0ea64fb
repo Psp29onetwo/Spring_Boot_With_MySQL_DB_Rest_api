@@ -1,0 +1,5 @@
+package com.student.springstudentrest_api.repository;
+
+public interface StudentRepository {
+
+}

@@ -1,0 +1,26 @@
+package com.student.springstudentrest_api.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.student.springstudentrest_api.entity.Student;
+import com.student.springstudentrest_api.service.StudentService;
+
+@RestController
+public class StudentController {
+	
+	@Autowired
+	private StudentService service;
+	
+	public Student addProduct( @RequestBody Student student) {
+		return service.saveStudent(student)
+	}
+	
+	public List<Student> addProducts( @RequestBody List<Student> student) {
+		return service.saveStudent(student)
+	}
+
+}

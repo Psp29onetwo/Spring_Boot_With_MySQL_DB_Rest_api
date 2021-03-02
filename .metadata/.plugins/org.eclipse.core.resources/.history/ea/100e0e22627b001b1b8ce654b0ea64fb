@@ -1,0 +1,76 @@
+package com.student.springstudentrest_api.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "STUDENT_TABLE")
+public class Student {
+	
+	@Id
+	@GeneratedValue
+	private int id;
+	private String name;
+	private String city;
+	private String gender;
+	private String b_date;
+	private String contact_no; //phone number cannot have only digits they have + and - too so string is best data type.
+	private int pincode;
+	
+	public String getName() {
+		
+		return name;
+	}
+	public void setName(String name2) {
+		this.name = name2;
+		
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city2) {
+		this.city = city2;
+	}
+	public String getBDate() {
+		// TODO Auto-generated method stub
+		return b_date;
+	}
+	public void setBDate(String bDate) {
+		// TODO Auto-generated method stub
+		this.b_date = bDate;
+	}
+	public String getGender() {
+		// TODO Auto-generated method stub
+		return gender;
+	}
+	public void setGender(String gender2) {
+		// TODO Auto-generated method stub
+		this.gender = gender2;
+	}
+	public String getContact() {
+		// TODO Auto-generated method stub
+		return contact_no;
+	}
+	public void setContact(String contact) {
+		// TODO Auto-generated method stub
+		this.contact_no = contact;
+	}
+	public Object getPincode() {
+		// TODO Auto-generated method stub
+		return pincode;
+	}
+	public void setPincode(Object pincode2) {
+		// TODO Auto-generated method stub
+		this.pincode = pincode2;
+	}
+	
+}

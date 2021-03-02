@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.student.springstudentrest_api.entity.Product.java&apos; to &apos;Student.java&apos;&#x0A;- Original project: &apos;demo&apos;&#x0A;- Original element: &apos;com.student.springstudentrest_api.entity.Product.java&apos;&#x0A;- Renamed element: &apos;com.student.springstudentrest_api.entity.Student.java&apos;" description="Rename compilation unit &apos;Product.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.student.springstudentrest_api.entity{Product.java" name="Student.java" references="false" stamp="1614686471469" version="1.0"/>
+</session>

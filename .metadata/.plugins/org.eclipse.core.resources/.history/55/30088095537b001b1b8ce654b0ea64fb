@@ -1,0 +1,5 @@
+package com.student.springstudentrest_api.service;
+
+public class StudentService {
+
+}

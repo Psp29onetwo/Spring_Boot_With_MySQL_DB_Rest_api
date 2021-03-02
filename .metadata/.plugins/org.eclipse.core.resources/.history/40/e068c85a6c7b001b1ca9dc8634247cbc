@@ -1,0 +1,61 @@
+package com.student.springstudentrest_api.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.student.springstudentrest_api.entity.Student;
+import com.student.springstudentrest_api.repository.StudentRepository;
+
+
+
+@Service
+public class StudentService {
+	
+	@Autowired
+	private StudentRepository repository;
+	
+	public Student saveStudent(Student student) {
+		
+		return repository.save(student);
+	}
+	
+	public List<Student> saveStudents(List<Student> students) {
+		
+		return repository.saveAll(students);
+	}
+
+	
+	public List<Student> getStudents(){
+		return repository.findAll();
+	}
+	
+	//Fetching student details by ID.
+	public Student getStudentbyId(int id){
+		return repository.findById(id).orElse(null); // If this method cant find student by id then it will return null.
+	}
+	
+//	//Fetching student details by name.
+//	public Student getStudentbyName(String name){
+//		return repository.findbyName(name); // If this method cant find student by id then it will return null.
+//	}
+	
+	//For Deleting Student Entry.
+	public String deleteStudent(int id) {
+		repository.deleteById(id);
+		return (String) "Student number " + id + "Removed";
+	}
+	
+	//For updating Student Entry.
+	public Student updateStudent(Student student) {
+		Student existingStudent = repository.findById(student.getId()).orElse(null);
+		existingStudent.setName(student.getName());
+		existingStudent.setCity(student.getCity());
+		existingStudent.setBDate(student.getBDate());
+		existingStudent.setGender(student.getGender());
+		existingStudent.setContact(student.getContact());
+		existingStudent.setPincode((int) student.getPincode());
+		return repository.save(existingStudent);
+	}
+}

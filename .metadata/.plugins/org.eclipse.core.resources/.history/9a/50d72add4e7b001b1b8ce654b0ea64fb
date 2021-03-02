@@ -1,0 +1,5 @@
+package com.student.springstudentrest_api.entity;
+
+public class Product {
+
+}
