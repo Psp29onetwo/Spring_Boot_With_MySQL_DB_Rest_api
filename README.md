@@ -100,10 +100,10 @@ url pattern : **http://localhost:9912/addstudents**
 ```
 - For Example:
 
-![Adding multiple students image postman](spring_pics/post_multiple_postman.png "Adding multiple students image postman")
+![Adding multiple students image postman](demo/spring_pics/post_multiple_postman.png "Adding multiple students image postman")
 **Sending request to add multiple students in database.**
 
-![Adding multiple students image Database](spring_pics/post_multiple_database.png "Adding multiple students image Database")
+![Adding multiple students image Database](demo/spring_pics/post_multiple_database.png "Adding multiple students image Database")
 **Multiple students added into the database.**
 &nbsp;
 
@@ -117,7 +117,7 @@ url pattern: **http://localhost:9912/students**
 
 - For example:
 
-![Adding student image postman](spring_pics/get_all_students.png "Adding student image postman")
+![Adding student image postman](demo/spring_pics/get_all_students.png "Adding student image postman")
 **Getting all students from database.**
 #### To get list of student by ID from database
 
@@ -125,7 +125,7 @@ url pattern: **http://localhost:9912/studentbyid/1**
 
 - For Example:
 
-![Adding student image postman](spring_pics/get_student_by_id_postman.png "Adding student image postman")
+![Adding student image postman](demo/spring_pics/get_student_by_id_postman.png "Adding student image postman")
 **Getting student by id from database.**
 &nbsp;
 
@@ -154,10 +154,10 @@ url pattern: **http://localhost:9912/update**
 &nbsp;
 - For Example:
 
-![Updating student image postman](spring_pics/update_postman.png "Updating student image postman")
+![Updating student image postman](demo/spring_pics/update_postman.png "Updating student image postman")
 **Updating student details in database.**
 
-![Updating student image database](spring_pics/update_database.png "Updated student image database")
+![Updating student image database](demo/spring_pics/update_database.png "Updated student image database")
 **Updated student details in database.**
 
 &nbsp;
@@ -174,8 +174,8 @@ url pattern: **http://localhost:9912/delete/5**
 
 - For Example:
 
-![Deleting student image postman](spring_pics/delete_postman.png "Deleting student image postman")
+![Deleting student image postman](demo/spring_pics/delete_postman.png "Deleting student image postman")
 **Deleting student details in database.**
 
-![Deleted student image postman](spring_pics/delete_db.png "Deleted student image postman")
+![Deleted student image postman](demo/spring_pics/delete_db.png "Deleted student image postman")
 **Deleted student details in database.**
