@@ -24,23 +24,23 @@ This RestAPI uses MySQL database and have table student and have attributes as f
 ## Installation
 
 - Make sure your IDE is configured and MySQL server is up and running.
-- To see the data open MySQL workbench and the moment the roject runs it will automatically create an table Student and declares attributes also.
-- Open Project in IDE and configure `application.resource` according to your MySQL configuration on your system.
-- Open `application.resource` and see `spring.datasource.url=jdbc:mysql://localhost:3306/paurav` line change `paurav` with database name you want to create.
+- Open Project in IDE and configure `application.properties` according to your MySQL configuration on your system.
+- Open `application.properties` and see `spring.datasource.url=jdbc:mysql://localhost:3306/paurav` line change `paurav` with database name you want to create.
 - open MySQL workbench and fire this SQL statement to create database of your name which you changed inplace of paurav in that url
 
 ```
-create database [your database name which you replaced with paurav in above url in `application.resource` file].
+create database [your database name which you replaced with paurav in above url in `application.properties` file].
 use [your database name].
 ```
 
 - Run `DemoApplication.java` as a java application, if everything on your system is configured you should see the console with no errors.
 - Open postman and start using RestAPI.
+- Now you can see the Database in MySQL workbench also you just need to create datbase that's it all things will operated by spring boot itself.
 
 ## Usage
 
 - Make sure your MySQL server and application is running in IDE with no errors as stated in **Installation** section.
-- If you changed `application.resource` file then see the port number which you assigned on that port id your application is running right now if not the go with the default configuration shown below.
+- If you changed `application.properties` file then see the port number which you assigned on that port id your application is running right now if not the go with the default configuration shown below.
 
 &nbsp;
 
@@ -137,7 +137,7 @@ url pattern: **http://localhost:9912/studentbyid/1**
 
 url pattern: **http://localhost:9912/update**
 
-- Passing JSON to student update entry by id.
+- Passing JSON to update student entry by id.
 
 ```
 {
@@ -179,3 +179,5 @@ url pattern: **http://localhost:9912/delete/5**
 
 ![Deleted student image postman](demo/spring_pics/delete_db.png "Deleted student image postman")
 **Deleted student details in database.**
+
+Thank you!
